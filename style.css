@@ -1,0 +1,186 @@
+
+    h1, h2, h3 {
+  font-family: 'Anton', sans-serif;
+}
+
+h2 {
+  font-size: 45px;
+  font-weight: 600;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: maroon;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-item {
+  padding: 0 10px;
+}
+
+.nav-link {
+  color: #333333;
+  font-family: 'Poppins', sans-serif;
+}
+
+.signupButton {
+  margin-left: 10px;
+}
+
+.loginButton a, .signupButton a {
+  text-decoration: none;
+}
+
+.loginButton a {
+  color: black;
+}
+
+
+.loginButton a:hover {
+  color: white;
+}
+
+
+.signupButton a {
+  color: white;
+}
+
+.nav-link:hover {
+  color: red;
+}
+
+/* Landing Page */
+.landing-page {
+  position: relative;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100dvh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.landing-page h1 {
+  font-size: 60px;
+  color: white;
+}
+
+.landing-page p {
+  color: white;
+}
+
+@media screen and (max-width: 480px) {
+  .landing-page h1 {
+    font-size: 40px;
+  }
+}
+
+ /* About Section */
+ .about-section {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.about-section h2 {
+  color: #333333;
+}
+
+.about-section p {
+  color: #555555;
+  text-align: justify;
+}
+
+.about-section .desc{
+  text-align: center;
+}
+
+.about-section img {
+  width: 95%;
+  height: 70%;
+  /* margin-bottom: 20px; */
+}
+
+/* Rooms Section */
+.rooms-section {
+  margin-top: 50px;
+  padding-top: 80px;
+  background-color: #f8f9fa;
+}
+
+.rooms-section p {
+  text-align: center;
+}
+
+.room-card {
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.room-card img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.room-card .card-body {
+  text-align: center;
+}
+
+/* Gallery Section */
+.gallery-section {
+  padding-top: 80px;
+}
+
+.gallery-section p {
+  text-align: center;
+}
+
+.carousel-item {
+  border-radius: 15px;
+}
+
+/* Booking Form */
+.booking-form {
+  margin-top: 50px;
+  padding-top: 80px;
+  background-color: #f8f9fa;
+}
+
+.booking-form .form-control {
+  border-radius: 25px;
+}
+
+/* Footer */
+footer {
+  margin-top: 50px;
+  padding: 30px 0;
+  background-color: #343a40;
+  color: #ffffff;
+}
+
+footer p {
+  margin-bottom: 0;
+}

@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* .background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+} */
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.main {
+    width: 420px;
+    background: lightgrey;
+    color: black;
+    border-radius: 10px;
+    padding: 30px 40px;
+    z-index: 1;
+    justify-content: center;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+}
+
+.close-button:hover {
+    color: #ff0000;
+}
+
+.main h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.main .input-box {
+    width: 100%;
+    height: 50px;
+    background: whitesmoke;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: black;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: black;
+}
+
+.main .btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.main .btn {
+    width: 40%;
+    height: 45px;
+    border-radius: 60px;
+    font-size: 15px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: black;
+    color: white;
+}
+
+.btn:active {
+    background-color: black;
+    opacity: .7;
+}
+
+.main .register {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register p a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* .register p a:hover {
+    text-decoration: underline;
+} */
+
+/* Existing styles */
+
+.notification {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 10;
+    width: 300px;
+    text-align: center;
+}
+
+/* Notification styles */
+.notification.success {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.notification.error {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+.notification p {
+    margin: 0;
+}
+
+
